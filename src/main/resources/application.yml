@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: demo
+  security:
+    authentication: session
+redis.uri: redis://localhost
