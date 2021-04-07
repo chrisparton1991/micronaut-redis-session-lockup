@@ -3,4 +3,18 @@ micronaut:
     name: demo
   security:
     authentication: session
+
+  session:
+    http:
+      redis:
+        enabled: true
+        write-mode: BACKGROUND
+        enable-keyspace-events: false
+
 redis.uri: redis://localhost
+
+endpoints:
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: anonymous
